@@ -16,8 +16,8 @@ from pyrogram.types import ReplyKeyboardMarkup
 if MY_PASS:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","login🔑","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["𝘀𝘁𝗮𝗿𝘁✅","𝗛𝗲𝗹𝗽📚","𝗟𝗼𝗴𝗶𝗻⚠️","𝗗𝗖"],
+                ["𝗙𝗼𝗹𝗹𝗼𝘄💔","𝗣𝗶𝗻𝗴","𝗦𝘁𝗮𝘁𝘂𝘀 🤖","𝗠𝗮𝗶𝗻𝘁𝗮𝗶𝗻𝗲𝗿𝘀😎"]
                         
             ],
             resize_keyboard=True
@@ -25,8 +25,12 @@ if MY_PASS:
 else:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+              ["𝘀𝘁𝗮𝗿𝘁✅","𝗛𝗲𝗹𝗽📚","𝗟𝗼𝗴𝗶𝗻⚠️","𝗗𝗖"],
+
+                ["𝗙𝗼𝗹𝗹𝗼𝘄💔","𝗣𝗶𝗻𝗴","𝗦𝘁𝗮𝘁𝘂𝘀 🤖","𝗠𝗮𝗶𝗻𝘁𝗮𝗶𝗻𝗲𝗿𝘀😎"]
+
+                         
+            
                         
             ],
             resize_keyboard=True
@@ -70,7 +74,7 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<i>𝓢𝓸𝓶𝓮𝓽𝓱𝓲𝓷𝓰 𝔀𝓮𝓷𝓽 𝔀𝓻𝓸𝓷𝓰</i> <b> <a href='https://github.com/adarsh-goel'>CLICK HERE FOR SUPPORT </a></b>",
+                text="<i>𝓢𝓸𝓶𝓮𝓽𝓱𝓲𝓷𝓰 𝔀𝓮𝓷𝓽 𝔀𝓻𝓸𝓷𝓰</i> <b> <a href='https://t.me/sarbudeen786'>CLICK HERE FOR SUPPORT </a></b>",
                 
                 disable_web_page_preview=True)
             return
@@ -118,7 +122,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__ [ADARSH GOEL](https://github.com/adarsh-goel/-pro/issues).",
+                text="__Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ__ [💔Lonely 💔](https://t.me/sarbudeen786).",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
@@ -128,8 +132,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ DEV", url="https://github.com/adarsh-goel")],
-                [InlineKeyboardButton("💥 Source Code", url="https://github.com/adarsh-goel/-pro/")]
+                [InlineKeyboardButton("💁‍♂️ DEV", url="https://t.me/sarbudeen786")],
+                [InlineKeyboardButton("💥 Source Code", url="https://t.me/thanimaiowner")]
             ]
         )
     )
