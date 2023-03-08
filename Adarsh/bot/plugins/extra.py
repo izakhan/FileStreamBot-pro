@@ -17,7 +17,7 @@ async def maintainers(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By [💔Lonely king💔]()https://t.me/thanimaiowner",
+                    text="I am Coded By [💔Lonely king💔](https://t.me/thanimaiowner)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -50,7 +50,7 @@ async def follow_user(b,m):
                     disable_web_page_preview=True)
         
 
-@StreamBot.on_message(filters.regex("𝗗𝗰"))
+@StreamBot.on_message(filters.regex("𝗗𝗖"))
 async def start(bot, update):
     text = START_TEXT.format(update.from_user.dc_id)
     await update.reply_text(
@@ -81,7 +81,7 @@ async def ping(b, m):
     
     
     
-@StreamBot.on_message(filters.private & filters.regex("status📊"))
+@StreamBot.on_message(filters.private & filters.regex("𝗦𝘁𝗮𝘁𝘂𝘀 🤖"))
 async def stats(bot, update):
   currentTime = readable_time((time.time() - StartTime))
   total, used, free = shutil.disk_usage('.')
