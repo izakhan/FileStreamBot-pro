@@ -10,19 +10,19 @@ from Adarsh import StartTime
 START_TEXT = """ Your Telegram DC Is : `{}`  """
 
 
-@StreamBot.on_message(filters.regex("maintainers😎"))
+@StreamBot.on_message(filters.regex("𝗠𝗮𝗶𝗻𝘁𝗮𝗶𝗻𝗲𝗿𝘀😎"))
 async def maintainers(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By [Adarsh Goel](https://github.com/adarsh-goel)",
+                    text="I am Coded By [💔Lonely king💔]()https://t.me/thanimaiowner",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("Developer💻", url=f"https://github.com/adarsh-goel")
+                                InlineKeyboardButton("Developer💻", url=f"https://t.me/thanimaiowner")
                             ]
                         ]
                     ),
@@ -30,7 +30,7 @@ async def maintainers(b,m):
                     disable_web_page_preview=True)
             
          
-@StreamBot.on_message(filters.regex("follow❤️"))
+@StreamBot.on_message(filters.regex("𝗙𝗼𝗹𝗹𝗼𝘄💔"))
 async def follow_user(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
@@ -42,7 +42,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("FOLLOW ME", url=f"https://GITHUB.COM/adarsh-goel")
+                                InlineKeyboardButton("FOLLOW ME", url=f"https://t.me/thanimaiowner")
                             ]
                         ]
                     ),
@@ -50,7 +50,7 @@ async def follow_user(b,m):
                     disable_web_page_preview=True)
         
 
-@StreamBot.on_message(filters.regex("DC"))
+@StreamBot.on_message(filters.regex("𝗗𝗰"))
 async def start(bot, update):
     text = START_TEXT.format(update.from_user.dc_id)
     await update.reply_text(
@@ -70,7 +70,7 @@ async def list(l, m):
     )
     
     
-@StreamBot.on_message(filters.regex("ping📡"))
+@StreamBot.on_message(filters.regex("𝗣𝗶𝗻𝗴"))
 async def ping(b, m):
     start_t = time.time()
     ag = await m.reply_text("....")
