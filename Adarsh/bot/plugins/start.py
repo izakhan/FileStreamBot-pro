@@ -1,11 +1,11 @@
 # (c) Code-X-Mania 
-from Code_X_Mania.bot import StreamBot
-from Code_X_Mania.vars import Var
+from Adarsh.bot import StreamBot
+from Adarsh.vars import Var
 import logging
 logger = logging.getLogger(__name__)
 
-from Code_X_Mania.utils.human_readable import humanbytes
-from Code_X_Mania.utils.database import Database
+from Adarsh.utils.human_readable import humanbytes
+from Adarsh.utils.database import Database
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import UserNotParticipant
@@ -35,7 +35,7 @@ async def follow_user(b,m):
     except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="I am Coded By [😎Lonelyking😎](https://github.com/lonelysing)",
+                    text="I am Coded By [😎Lonelyking😎](https://t.me/sarbudeen786)",
                     
                     reply_markup=InlineKeyboardMarkup(
                         [
@@ -60,7 +60,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("FOLLOW ME", url=f"https://GITHUB.COM/Kdifamily")
+                                InlineKeyboardButton("FOLLOW ME", url=f"https://t.me/thanimaiowner")
                             ]
                         ]
                     ),
@@ -128,7 +128,7 @@ Send me any file and get a direct download link and streamable link.!""",
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="**Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Qᴜɪᴄᴋʟʏ ᴄᴏɴᴛᴀᴄᴛ** @codexmaniachat",
+                        text="**Sᴏʀʀʏ Sɪʀ, Yᴏᴜ ᴀʀᴇ Bᴀɴɴᴇᴅ ᴛᴏ ᴜsᴇ ᴍᴇ. Qᴜɪᴄᴋʟʏ ᴄᴏɴᴛᴀᴄᴛ** @Thanimaisupport",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -155,7 +155,7 @@ Send me any file and get a direct download link and streamable link.!""",
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ** [ADARSH GOEL](https://t.me/codexmaniabot)",
+                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ** [💔Lonely💔](https://t.me/sarbudeen786)",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -266,7 +266,7 @@ async def help_handler(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("💁‍♂️ DEV", url="https://t.me/sarbudeen786")],
-                [InlineKeyboardButton("💥 FOLLOW", url="https://GitHub.com/lonelysing")]
+                [InlineKeyboardButton("💥 FOLLOW", url="https://t.me/thanimaiowner")]
             ]
         )
     )
